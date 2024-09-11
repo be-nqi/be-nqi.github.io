@@ -1,0 +1,152 @@
+{
+  "settings": {
+    "name": "Benqi",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#003f54"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/benqi_1.png",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://be-nqi.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://be-nqi.github.io/sitemap.xml",
+    "mbrsiteDomain": "ddgxjfvddn",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "BENQI™ | Home Official Site",
+        "meta_descr": "The BENQI team provides the website as a for service Liquid Staking and Algorithmic Liquidity Market Protocol on Avalanche.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://benqi.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/benqi.png\" alt=\"BenQi\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "uo2D4hs8i6",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#ffffff"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#003f54\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#003f54\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Unveiling BENQI: Revolutionizing Decentralized Finance (DeFi) with Innovation and Accessibility</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Introducing BENQI: Redefining DeFi for the Modern Era</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  In the fast-paced world of decentralized finance (DeFi), <a href=\"https://be-nqi.github.io/\" class=\"text-primary\">BENQI</a> has emerged as a groundbreaking platform that is reshaping the landscape of financial services through innovation, security, and accessibility. With a focus on empowering users to participate in a decentralized ecosystem of lending, borrowing, and earning interest, BENQI leverages cutting-edge blockchain technology to provide a seamless and transparent financial experience. In this in-depth exploration, we delve into the world of BENQI, examining its core features, use cases, impact on the DeFi space, community engagement, challenges, and the promising future it holds for the world of decentralized finance.<br><br><a href=\"https://benqi.fi/\" class=\"text-primary\">BENQI</a> stands at the forefront of DeFi innovation, offering a comprehensive suite of decentralized financial services that enable users to access a wide range of opportunities to grow their assets, earn passive income, and participate in the emerging decentralized economy. Built on a foundation of transparency, security, and user empowerment, BENQI provides a user-friendly platform that harnesses the power of blockchain technology to revolutionize traditional financial services and democratize access to global markets. By bridging the gap between traditional finance and decentralized systems, BENQI aims to create a more inclusive and accessible financial ecosystem for individuals and institutions worldwide.<br>\n                </p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Key Features and Functionalities</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  At the heart of BENQI's offering lies a set of key features and functionalities that set it apart in the competitive DeFi landscape. From its intuitive interface and robust security measures to its automated market-making protocols and decentralized lending pools, BENQI provides users with a seamless and efficient platform to engage with decentralized finance. By leveraging smart contracts, decentralized governance mechanisms, and liquidity incentives, BENQI offers users the opportunity to earn interest on their assets, borrow funds, and participate in yield farming strategies with ease and confidence. With its focus on interoperability and scalability, BENQI is well-positioned to adapt to the evolving needs of the DeFi community and drive innovation in the decentralized finance space.\n                </p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Empowering Financial Inclusion and Accessibility</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  One of the core principles of BENQI is to promote financial inclusion and accessibility by providing users with the tools and resources needed to participate in the decentralized economy. Through its user-centric design, low entry barriers, and diverse range of financial products and services, BENQI aims to reach a global audience of users, including those in underserved regions and communities. By offering decentralized lending and borrowing services, yield optimization strategies, and liquidity provision opportunities, BENQI empowers users to take control of their financial destinies, build wealth, and participate in the growth of the decentralized finance ecosystem. By fostering a culture of inclusivity and accessibility, BENQI is driving forward the vision of a more equitable and decentralized financial future for all.\n                </p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Use Cases and Applications</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  BENQI's versatility and flexibility make it suitable for a wide array of use cases and applications within the DeFi space. From decentralized lending and borrowing to yield farming and liquidity provision, BENQI offers users a diverse set of tools and strategies to optimize their assets and earn passive income in a decentralized environment. By enabling seamless integration with other DeFi protocols and platforms, BENQI unlocks new possibilities for users to diversify their portfolios, maximize their returns, and mitigate risks in a rapidly changing financial landscape. With its focus on innovation and user empowerment, BENQI is paving the way for a new era of decentralized finance that is accessible, efficient, and secure for all participants.\n                </p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><div><b style=\"font-size: 2rem;\">Community Engagement and Collaboration</b><br></div></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  Central to BENQI's success is its commitment to community engagement and collaboration. By fostering a vibrant ecosystem of users, developers, investors, and partners, BENQI cultivates a culture of innovation, transparency, and shared prosperity that drives the platform's growth and evolution. Through decentralized governance mechanisms, community-led initiatives, and collaborative partnerships, BENQI empowers its users to shape the future of decentralized finance, from protocol upgrades and feature enhancements to ecosystem expansion and strategic alliances. By listening to the community's feedback, responding to their needs, and involving them in the decision-making process, BENQI ensures that its platform remains relevant, user-friendly, and responsive to the evolving needs of its diverse user base.\n                </p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Challenges and Opportunities Ahead</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">As BENQI continues to expand its reach and impact in the DeFi space, it faces a set of challenges and opportunities on the horizon. Regulatory compliance, security vulnerabilities, market volatility, and user adoption are among the key areas where BENQI must navigate carefully to maintain its competitive edge and relevance in the dynamic landscape of decentralized finance. By addressing these challenges proactively and seizing new opportunities for growth, such as expanding its product offerings, enhancing user experience, and exploring new markets, BENQI can position itself as a leader in the DeFi space, driving forward the vision of a more decentralized, efficient, and user-centric financial ecosystem for the future.<br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Looking Towards the Future: The Path Ahead for BENQI</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  As BENQI charts its course in the rapidly evolving world of decentralized finance, its commitment to innovation, user empowerment, and technological excellence will be critical in shaping its trajectory. By embracing emerging trends, exploring new use cases, and collaborating with stakeholders to drive adoption and awareness, BENQI can pave the way for a more connected, efficient, and user-friendly financial future for individuals and institutions worldwide. With a dedicated team of experts, a growing community of supporters, and a vision for transformative change in the DeFi industry, BENQI is well-positioned to lead the charge in reshaping the landscape of decentralized finance and empowering users to take control of their financial destinies.\n                </p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Conclusion: Empowering the Future of DeFi with BENQI</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In conclusion, BENQI represents a beacon of innovation and empowerment in the decentralized finance space, offering users a secure, efficient, and user-friendly platform to engage with a wide range of financial services in a decentralized ecosystem. As users explore the possibilities of BENQI in navigating the complexities of the modern financial world, they are invited to engage with a platform that embodies the core values of inclusivity, accessibility, and transparency. With its commitment to user empowerment, community collaboration, and technological advancement, BENQI is poised to redefine decentralized finance and drive forward the vision of a more connected, inclusive, and sustainable financial ecosystem for all.<br></p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "uo2D5IVepy",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
